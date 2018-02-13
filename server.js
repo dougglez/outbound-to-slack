@@ -3,7 +3,7 @@ const slackInstance = require('slack-messenger');
 const bodyP = require('body-parser');
 const xmlP = require('express-xml-bodyparser');
 
-const sfResponse = require("./sfResponse.xml");
+const sfResponse = require("./sfResponse");
 const { SlackHook }= require('./config');
 const slackMsg = new slackInstance(SlackHook);
 
