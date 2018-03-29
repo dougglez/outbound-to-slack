@@ -26,4 +26,9 @@ app.post('/api/salesforce/pto', (req,res,next) => {
   res.send(sfResponse)
 });
 
+app.post('/api/slack', (req, res, next) => {
+  console.log(req.body);
+  slackMsg.sendMessage('Message from salesforce');
+});
+
 app.listen(9001, console.log('Port running on 9001'));
